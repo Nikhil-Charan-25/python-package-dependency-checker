@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-dependency-checker"
+version = "1.0.0"
+description = "Check Python-package dependency health, version conflicts, updates, and graphs."
+requires-python = ">=3.10"
+dependencies = ["packaging>=23.0"]
+
+[project.scripts]
+depcheck = "dependency_checker:main"
+
+[tool.setuptools]
+py-modules = ["dependency_checker"]
